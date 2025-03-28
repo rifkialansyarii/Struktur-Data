@@ -1,8 +1,13 @@
 #include <iostream>
 using namespace std;
 string kelas[30];
+int pos = 0;
+void inputData(string nama){
+    kelas[pos] = nama;
+    pos++;
+}
 
 int main() {
-  cout << "Hello World!";
-  return 0;
+    inputData("Rifki Al Ansyari");
+    return 0;
 }
