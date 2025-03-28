@@ -7,7 +7,9 @@ void outputData();
 
 int main() {
     inputData("Indomi goreng plus telor");
+    outputData();
     inputData("Ayam Bacem Sambal mata");
+    outputData();
     inputData("Lontong Sayur Lauk Haruan");
     outputData();
     return 0;
