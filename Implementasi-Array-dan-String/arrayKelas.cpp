@@ -3,13 +3,28 @@ using namespace std;
 string kelas[30];
 int pos = 0;
 void inputData(string nama);
+void outputData();
 
 int main() {
-    inputData("Rifki Al Ansyari");
+    inputData("Indomi goreng plus telor");
+    inputData("Ayam Bacem Sambal mata");
+    inputData("Lontong Sayur Lauk Haruan");
+    outputData();
     return 0;
 }
 
 void inputData(string nama){
     kelas[pos] = nama;
     pos++;
+}
+
+void outputData(){
+    for (int i = 0; i < pos; i++){
+        cout << kelas [i];
+        if (i < pos-1){
+            cout << ",";
+        }else{
+            cout << "."<< endl;
+        }
+    }
 }
